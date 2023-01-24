@@ -1,3 +1,5 @@
+package App;
+
 public class Competitor {
     private String id;
     private String name;
