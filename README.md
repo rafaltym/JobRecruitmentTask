@@ -1,7 +1,7 @@
 ## General info
 Application has been built using SpringBoot framework.
 It provides access to database of UEFA Champions League 2021/22.
-- user can define how many most probable matches result will be printed
+- user can define how many most probable matches results will be printed
 - user can print the list with unique teams names
 
 ## How to run App
