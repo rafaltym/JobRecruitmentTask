@@ -13,17 +13,16 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBase {
-
     //List to store Event objects
-    List<Event> eventList = new ArrayList<>();
-    //the list to store indexes of events in order from that with the highest probability result
-    List<Integer> listOfIndexes = new ArrayList<>();
+    private List<Event> eventList = new ArrayList<>();
 
-    //read json file data to String
-    byte[] jsonData;
+    public List<Event> getEventList() {
+        return eventList;
+    }
 
     public void readJsonFile() throws IOException {
-        jsonData = Files.readAllBytes(Paths.get("src/main/resources/BE_data.json"));
+        //read json file data to String
+        byte[] jsonData = Files.readAllBytes(Paths.get("src/main/resources/BE_data.json"));
         //create ObjectMapper instance
         ObjectMapper objectMapper = new ObjectMapper();
         //create tree from Json
@@ -37,12 +36,15 @@ public class DataBase {
 
     public List<Integer> mostProbableResults() {
         //Mapping the value of the highest probability in particular event(Double) and the index of that event(Integer)
-        HashMap<Double, Integer> map = new HashMap<Double, Integer>();
-        List<Double> keysList = new ArrayList<Double>();
+        HashMap<Double, Integer> map = new HashMap<>();
+        //the list to store keys from HashMap
+        List<Double> keysList = new ArrayList<>();
+        //the list to store indexes of events in order from that with the highest probability result
+        List<Integer> listOfIndexes = new ArrayList<>();
 
         int i = 0;
         for (Event event : eventList) {
-            double max = 0;
+            double max;
             double awayWin = event.getProbability_away_team_winner();
             double homeWin = event.getProbability_home_team_winner();
             double draw = event.getProbability_draw();
