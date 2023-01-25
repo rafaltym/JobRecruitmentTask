@@ -5,7 +5,7 @@ It provides access to database of UEFA Champions League 2021/22.
 - user can print the list with unique teams names
 
 ## How to run App
-- download all files from repository
+- download package with all files from repository
 - open it using software developer(i.e. IntelliJ IDEA)
 - allow to download all necessary libraries, plugins etc.
 - run 'Main'
