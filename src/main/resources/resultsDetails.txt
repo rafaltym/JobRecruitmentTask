@@ -1,0 +1,60 @@
+--------------------------------------------1--------------------------------------------<br>
+Start date: 2021-06-22 18:00:00,<br>
+SS Folgore Falciano Calcio (San Marino) vs. FC Prishtina (Kosovo),<br>
+Venue: Elbasan Arena,<br>
+Highest probable result: DRAW (88.1)<br>
+<br>
+--------------------------------------------2--------------------------------------------<br>
+Start date: 2021-07-06 16:00:00,<br>
+Ferencvarosi Budapest (Hungary) vs. FC Prishtina (Kosovo),<br>
+Venue: Groupama Arena,<br>
+Highest probable result: HOME_TEAM_WIN (83.7)<br>
+<br>
+--------------------------------------------3--------------------------------------------<br>
+Start date: 2021-07-06 17:00:00,<br>
+FC CFR 1907 Cluj (Romania) vs. FK Borac Banja Luka (Bosnia & Herzegovina),<br>
+Venue: Dr. Constantin Radulescu,<br>
+Highest probable result: HOME_TEAM_WIN (82.1)<br>
+<br>
+--------------------------------------------4--------------------------------------------<br>
+Start date: 2021-07-13 17:00:00,<br>
+FC Sheriff Tiraspol (Moldova) vs. KF Teuta (Albania),<br>
+Venue: Sheriff Stadium,<br>
+Highest probable result: HOME_TEAM_WIN (81.9)<br>
+<br>
+--------------------------------------------5--------------------------------------------<br>
+Start date: 2021-07-07 17:00:00,<br>
+Malmo FF (Sweden) vs. Riga FC (Latvia),<br>
+Venue: Stadion,<br>
+Highest probable result: HOME_TEAM_WIN (80.4)<br>
+<br>
+--------------------------------------------6--------------------------------------------<br>
+Start date: 2021-07-07 17:00:00,<br>
+GNK Dinamo Zagreb (Croatia) vs. Valur Reykjavik (Iceland),<br>
+Venue: Maksimir,<br>
+Highest probable result: HOME_TEAM_WIN (80.0)<br>
+<br>
+--------------------------------------------7--------------------------------------------<br>
+Start date: 2021-07-21 19:00:00,<br>
+Legia Warszawa (Poland) vs. Flora Tallinn (Estonia),<br>
+Venue: Municipal Stadium of Marshal Jozef Pilsudski,<br>
+Highest probable result: HOME_TEAM_WIN (79.7)<br>
+<br>
+--------------------------------------------8--------------------------------------------<br>
+Start date: 2021-07-28 17:30:00,<br>
+FC CFR 1907 Cluj (Romania) vs. Lincoln Red Imps (Gibraltar),<br>
+Venue: Dr. Constantin Radulescu,<br>
+Highest probable result: HOME_TEAM_WIN (78.4)<br>
+<br>
+--------------------------------------------9--------------------------------------------<br>
+Start date: 2021-07-13 20:00:00,<br>
+Valur Reykjavik (Iceland) vs. GNK Dinamo Zagreb (Croatia),<br>
+Venue: Hlidarendi Stadium,<br>
+Highest probable result: DRAW (75.2)<br>
+<br>
+--------------------------------------------10--------------------------------------------<br>
+Start date: 2021-07-28 18:00:00,<br>
+PFC Ludogorets 1945 Razgrad (Bulgaria) vs. Mura Murska Sobota (Slovenia),<br>
+Venue: Huvepharma Arena,<br>
+Highest probable result: HOME_TEAM_WIN (73.8)<br>
+<br>

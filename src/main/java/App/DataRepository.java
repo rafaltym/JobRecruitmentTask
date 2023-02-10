@@ -3,6 +3,7 @@ package App;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,19 +12,27 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-
-public class DataBase {
+@Repository
+public class DataRepository {
     //List to store Event objects
     private List<Event> eventList = new ArrayList<>();
 
+    private List<Integer> mostProbableResults = new ArrayList<>();
+
     public List<Event> getEventList() {
+        readJsonFile();
         return eventList;
     }
+    public List<Integer> getMostProbableResults() {
+        readJsonFile();
+        mostProbableResultsVoid();
+        return mostProbableResults;
+    }
 
-    public void readJsonFile() throws IOException {
-        //read json file data to String
-        byte[] jsonData = Files.readAllBytes(Paths.get("src/main/resources/BE_data.json"));
-        //create ObjectMapper instance
+    private void readJsonFile()  {
+        byte[] jsonData = new byte[0];
+        try {
+        jsonData = Files.readAllBytes(Paths.get("src/main/resources/BE_data.json"));
         ObjectMapper objectMapper = new ObjectMapper();
         //create tree from Json
         JsonNode rootNode;
@@ -32,9 +41,12 @@ public class DataBase {
         JsonNode eventsNode = rootNode.path("Events");
         //map eventList  with Event class objects stored in JsonNode
         eventList = objectMapper.readValue(eventsNode.toString(), new TypeReference<List<Event>>() {});
+        } catch (IOException e) {
+            System.out.println("InReadJsonFileException");
+        }
     }
 
-    public List<Integer> mostProbableResults() {
+    private void mostProbableResultsVoid() {
         //Mapping the value of the highest probability in particular event(Double) and the index of that event(Integer)
         HashMap<Double, Integer> map = new HashMap<>();
         //the list to store keys from HashMap
@@ -67,7 +79,7 @@ public class DataBase {
         for (Double key : keysList) {
             listOfIndexes.add(map.get(key));
         }
-        return listOfIndexes;
+        mostProbableResults = listOfIndexes;
     }
 
 }
