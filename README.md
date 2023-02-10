@@ -7,7 +7,6 @@ It provides access to database of UEFA Champions League 2021/22.
 ## How to run App
 - download package with all files from repository
 - open it using software developer(i.e. IntelliJ IDEA)
-- allow to download all necessary libraries, plugins etc.
 - run 'Main'
 - go to local web browser
 - to display list of n most probable results(where n is an integer), go to "localhost:8080/get/results/n"
